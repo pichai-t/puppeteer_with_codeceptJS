@@ -1,6 +1,6 @@
-
 Feature('Verify Values for Asx Top 5');
 
+// 1
 Scenario('Check Values for Top 5 Stocks(Overall) Tab',  ({ I }) => {
    I.amOnPage('https://asxtop5.onrender.com/');      
    I.click('//*[@id="root"]/div/div[2]/label[1]');
@@ -13,6 +13,7 @@ Scenario('Check Values for Top 5 Stocks(Overall) Tab',  ({ I }) => {
    I.wait(2);  
 });
 
+// 2
 Scenario('Check Values for 5 Highest Dividend Yields Tab',  ({ I }) => {
    I.amOnPage('https://asxtop5.onrender.com/');      
    I.click('#root > div > div.tabset > label:nth-child(4)');
@@ -23,4 +24,3 @@ Scenario('Check Values for 5 Highest Dividend Yields Tab',  ({ I }) => {
    I.see('8.58%','//*[@id="rauchbier"]/table/tbody/tr[4]/td[5]');
    I.see('8.52%','//*[@id="rauchbier"]/table/tbody/tr[5]/td[5]');
 });
-
